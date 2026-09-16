@@ -30,10 +30,10 @@ def log(line):
 
 
 # ---------- Networking helpers ----------
-recv_buffers = {}  # one buffer per socket, since data can arrive in partial chunks
+recv_buffers = {}  
 
 def send_msg(sock, msg):
-    sock.sendall(msg.to_json().encode())  # no newline -- "}" is the terminator
+    sock.sendall(msg.to_json().encode())  
     log(f"Sent: uuid={msg.uuid}, flag={msg.flag}")
 
 def recv_msg(sock):
@@ -44,8 +44,8 @@ def recv_msg(sock):
             raise ConnectionError("Connection closed by peer")
         buf += data
     idx = buf.index("}")
-    msg_str = buf[:idx + 1]              # everything up to and including "}"
-    recv_buffers[sock] = buf[idx + 1:]   # save any leftover for the next message
+    msg_str = buf[:idx + 1]              
+    recv_buffers[sock] = buf[idx + 1:]   
     return Message.from_json(msg_str)
 
 
@@ -58,7 +58,7 @@ def main():
         sys.exit(1)
 
     config_file = sys.argv[1]
-    log_file = config_file.replace("config", "log")  # e.g. config1.txt -> log1.txt
+    log_file = config_file.replace("config", "log")  	
 
     with open(config_file) as f:
         lines = f.read().splitlines()
@@ -96,9 +96,6 @@ def main():
     t1.start()
     t2.start()
 
-    # Optional sync point for in-class demo -- uncomment if needed:
-    # input("press Enter when everyone is ready.")
-
     t1.join()
     t2.join()
 
@@ -107,11 +104,10 @@ def main():
 
     log("Both connections established.")
 
-    # Send initial message (no comparison)
     send_msg(client_sock, Message(my_id, 0))
 
     leader_id = None
-    state = 0  # 0 = still electing, 1 = leader known
+    state = 0  
     sent_own_announcement = False
 
     while True:
@@ -134,16 +130,16 @@ def main():
             log(f"Leader is decided to {leader_id}.")
             print(f"leader is {leader_id}")
             if not sent_own_announcement:
-                # forward the announcement around the ring
+               
                 send_msg(client_sock, msg)
-            break  # terminate after forwarding (or after hearing your own come back)
+            break  
 
         else:  # flag == 0
             if cmp == "greater":
                 send_msg(client_sock, msg)
             elif cmp == "less":
                 log(f"Ignored: uuid={msg.uuid}, flag={msg.flag}")
-            else:  # same -> I am the leader
+            else:  
                 leader_id = my_id
                 state = 1
                 announce = Message(my_id, 1)

@@ -98,87 +98,85 @@ Start all three within a few seconds of each other. Each process prints
 
 
 
-Terminal 1 — `python myleprocess.py config1.txt`
+\*\*Terminal 1 — `python myleprocess.py config1.txt`\*\*
 
 ```
 
-My ID: 2e4554ce-0258-494b-8b3e-d484688a6f7c
+My ID: 8d349eb8-5e23-441b-95d9-06c595ebcde3
 
 Both connections established.
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0
+Sent: uuid=8d349eb8-5e23-441b-95d9-06c595ebcde3, flag=0
 
-Received: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0, less, 0
+Received: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0, greater, 0
 
-Ignored: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0
+Sent: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0
 
-Received: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0, less, 0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0, greater, 0
 
-Ignored: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0
 
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0, same, 0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1, greater, 0
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
+Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
 
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
-
-leader is 2e4554ce-0258-494b-8b3e-d484688a6f7c
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1
 
 ```
 
 
 
-Terminal 2 — `python myleprocess.py config2.txt`
+\*\*Terminal 2 — `python myleprocess.py config2.txt`\*\*
 
 ```
 
-My ID: 2e4554ce-0258-494b-8b3e-d484688a6f7c
+My ID: e0c97948-4a51-4d1c-925e-59b173e6d9b7
 
 Both connections established.
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0
 
-Received: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0, less, 0
+Received: uuid=8d349eb8-5e23-441b-95d9-06c595ebcde3, flag=0, less, 0
 
-Ignored: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0
+Ignored: uuid=8d349eb8-5e23-441b-95d9-06c595ebcde3, flag=0
 
-Received: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0, less, 0
+Received: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0, less, 0
 
-Ignored: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0
+Ignored: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0
 
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0, same, 0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0, same, 0
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1
 
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
+Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
 
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1, same, 1, leader=2e4554ce-0258-494b-8b3e-d484688a6f7c
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1, same, 1, leader=e0c97948-4a51-4d1c-925e-59b173e6d9b7
 
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.```
-
-
-
-Terminal 3 — `python myleprocess.py config3.txt`
+Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
 
 ```
 
-My ID: 25f75839-4ddb-445f-81e8-4246dda55f78
+
+
+\*\*Terminal 3 — `python myleprocess.py config3.txt`\*\*
+
+```
+
+My ID: cb099c24-ea25-46b0-a41e-c69b51f36e36
 
 Both connections established.
 
-Sent: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0
+Sent: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0
 
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0, greater, 0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0, greater, 0
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0
 
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1, greater, 0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1, greater, 0
 
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
+Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
 
-leader is 2e4554ce-0258-494b-8b3e-d484688a6f7c
-
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1
 
 ```
 
@@ -188,7 +186,7 @@ Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
 
 All three processes independently agreed on the same leader:
 
-`2e4554ce-0258-494b-8b3e-d484688a6f7c` — the process with the largest UUID
+`e0c97948-4a51-4d1c-925e-59b173e6d9b7` — the process with the largest UUID
 
 among the three, satisfying the Termination, Uniqueness, and Agreement
 

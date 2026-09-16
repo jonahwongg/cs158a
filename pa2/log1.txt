@@ -1,10 +1,10 @@
-My ID: 1178d9ee-173c-472e-aa7c-ca4419c235a7
+My ID: 8d349eb8-5e23-441b-95d9-06c595ebcde3
 Both connections established.
-Sent: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0
-Received: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0, greater, 0
-Sent: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0, greater, 0
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0
-Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1, greater, 0
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
+Sent: uuid=8d349eb8-5e23-441b-95d9-06c595ebcde3, flag=0
+Received: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0, greater, 0
+Sent: uuid=cb099c24-ea25-46b0-a41e-c69b51f36e36, flag=0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0, greater, 0
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=0
+Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1, greater, 0
+Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
+Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1

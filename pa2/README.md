@@ -98,7 +98,7 @@ Start all three within a few seconds of each other. Each process prints
 
 
 
-\*\*Terminal 1 — `python myleprocess.py config1.txt`\*\*
+Terminal 1 — `python myleprocess.py config1.txt`
 
 ```
 
@@ -128,7 +128,7 @@ leader is 2e4554ce-0258-494b-8b3e-d484688a6f7c
 
 
 
-\*\*Terminal 2 — `python myleprocess.py config2.txt`\*\*
+Terminal 2 — `python myleprocess.py config2.txt`
 
 ```
 
@@ -154,15 +154,11 @@ Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
 
 Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1, same, 1, leader=2e4554ce-0258-494b-8b3e-d484688a6f7c
 
-Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
-
-leader is 2e4554ce-0258-494b-8b3e-d484688a6f7c
-
-```
+Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.```
 
 
 
-\*\*Terminal 3 — `python myleprocess.py config3.txt`\*\*
+Terminal 3 — `python myleprocess.py config3.txt`
 
 ```
 
@@ -182,7 +178,9 @@ Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
 
 leader is 2e4554ce-0258-494b-8b3e-d484688a6f7c
 
-Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1```
+Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1
+
+```
 
 
 

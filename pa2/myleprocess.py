@@ -30,15 +30,23 @@ def log(line):
 
 
 # ---------- Networking helpers ----------
+recv_buffers = {}  # one buffer per socket, since data can arrive in partial chunks
+
 def send_msg(sock, msg):
-    sock.sendall((msg.to_json() + "\n").encode())
+    sock.sendall(msg.to_json().encode())  # no newline -- "}" is the terminator
     log(f"Sent: uuid={msg.uuid}, flag={msg.flag}")
 
-def recv_msg(sockfile):
-    line = sockfile.readline()
-    if not line:
-        raise ConnectionError("Connection closed by peer")
-    return Message.from_json(line.strip())
+def recv_msg(sock):
+    buf = recv_buffers.get(sock, "")
+    while "}" not in buf:
+        data = sock.recv(1024).decode()
+        if not data:
+            raise ConnectionError("Connection closed by peer")
+        buf += data
+    idx = buf.index("}")
+    msg_str = buf[:idx + 1]              # everything up to and including "}"
+    recv_buffers[sock] = buf[idx + 1:]   # save any leftover for the next message
+    return Message.from_json(msg_str)
 
 
 # ---------- Main ----------
@@ -96,7 +104,6 @@ def main():
 
     server_sock = server_sock_holder["sock"]
     client_sock = client_sock_holder["sock"]
-    server_sockfile = server_sock.makefile("r")
 
     log("Both connections established.")
 
@@ -108,7 +115,7 @@ def main():
     sent_own_announcement = False
 
     while True:
-        msg = recv_msg(server_sockfile)
+        msg = recv_msg(server_sock)
 
         if msg.uuid > my_id:
             cmp = "greater"

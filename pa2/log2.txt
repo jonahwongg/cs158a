@@ -10,3 +10,12 @@ Sent: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1
 Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
 Received: uuid=e0c97948-4a51-4d1c-925e-59b173e6d9b7, flag=1, same, 1, leader=e0c97948-4a51-4d1c-925e-59b173e6d9b7
 Leader is decided to e0c97948-4a51-4d1c-925e-59b173e6d9b7.
+My ID: 02e3aef9-4bd7-457c-be46-23a189083316
+Both connections established.
+Sent: uuid=02e3aef9-4bd7-457c-be46-23a189083316, flag=0
+My ID: 4b30f44b-1c11-44c8-8686-ace8f36f461b
+Both connections established.
+Sent: uuid=4b30f44b-1c11-44c8-8686-ace8f36f461b, flag=0
+My ID: ee6560c0-fed6-4999-98d8-5de10a5eed5b
+Both connections established.
+Sent: uuid=ee6560c0-fed6-4999-98d8-5de10a5eed5b, flag=0

@@ -1,0 +1,10 @@
+My ID: 1178d9ee-173c-472e-aa7c-ca4419c235a7
+Both connections established.
+Sent: uuid=1178d9ee-173c-472e-aa7c-ca4419c235a7, flag=0
+Received: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0, greater, 0
+Sent: uuid=25f75839-4ddb-445f-81e8-4246dda55f78, flag=0
+Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0, greater, 0
+Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=0
+Received: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1, greater, 0
+Leader is decided to 2e4554ce-0258-494b-8b3e-d484688a6f7c.
+Sent: uuid=2e4554ce-0258-494b-8b3e-d484688a6f7c, flag=1

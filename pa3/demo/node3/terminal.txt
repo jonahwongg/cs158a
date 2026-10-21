@@ -1,0 +1,29 @@
+node a5cb2ea8 listening on TCP port 50003 (discovery on UDP 54321)
+sharing: charlie.txt, old_draft.txt
+type 'help' for commands
+[+] peer #1 connected: 192.0.2.2:50001 (we connected to it)
+[+] peer #2 connected: 192.0.2.2:50002 (we connected to it)
+[i] peer #1 192.0.2.2:50001 now shares: alpha.txt, gradient.png
+[i] peer #2 192.0.2.2:50002 now shares: bravo.txt
+[+] peer #3 connected: 192.0.2.2:42692 (it connected to us)
+[i] peer #3 192.0.2.2:50004 now shares: delta.csv
+[+] peer #4 connected: 192.0.2.2:42700 (it connected to us)
+[i] peer #4 192.0.2.2:50005 now shares: echo.txt
+[i] peer #2 192.0.2.2:50002 now shares: bravo.txt, echo.txt
+[i] peer #3 192.0.2.2:50004 now shares: delta.csv, gradient.png
+> files
+#   ADDRESS               FILES
+1   192.0.2.2:50001       alpha.txt, gradient.png
+2   192.0.2.2:50002       bravo.txt, echo.txt
+3   192.0.2.2:50004       delta.csv, gradient.png
+4   192.0.2.2:50005       echo.txt
+[-] peer #4 192.0.2.2:50005 left (connection closed by peer (empty read)); removed its files (1)
+> peers
+#   ADDRESS               NODE ID   ROLE    FILES
+1   192.0.2.2:50001       72033518  client  2
+2   192.0.2.2:50002       c2b57054  client  2
+3   192.0.2.2:50004       379b5fb5  server  2
+[-] peer #1 192.0.2.2:50001 left (connection closed by peer (empty read)); removed its files (2)
+[-] peer #2 192.0.2.2:50002 left (connection closed by peer (empty read)); removed its files (2)
+> quit
+left the network

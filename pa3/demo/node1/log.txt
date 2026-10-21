@@ -1,0 +1,66 @@
+2026-10-20 23:04:45.068  INFO         -                      -             node 72033518 started; TCP port 50001, UDP port 54321, shared=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:45.070  SENT         255.255.255.255:54321  PEER_REQUEST  node=72033518 tcp_port=50001
+2026-10-20 23:04:46.072  SENT         255.255.255.255:54321  PEER_REQUEST  node=72033518 tcp_port=50001
+2026-10-20 23:04:46.088  RECEIVED     192.0.2.2:48967        PEER_REQUEST  node=c2b57054 tcp_port=50002
+2026-10-20 23:04:46.088  SENT         192.0.2.2:48967        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:46.091  PEER_ADDED   192.0.2.2:56852        -             peer #1 node=? (it connected to us); peers now 1
+2026-10-20 23:04:46.092  RECEIVED     192.0.2.2:50002        FILE_LIST     files=['bravo.txt']
+2026-10-20 23:04:46.092  SENT         192.0.2.2:50002        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:47.075  SENT         255.255.255.255:54321  PEER_REQUEST  node=72033518 tcp_port=50001
+2026-10-20 23:04:47.075  RECEIVED     192.0.2.2:54321        PEER_ACK      node=c2b57054 ip=192.0.2.2 tcp_port=50002
+2026-10-20 23:04:47.086  RECEIVED     192.0.2.2:49891        PEER_REQUEST  node=a5cb2ea8 tcp_port=50003
+2026-10-20 23:04:47.086  SENT         192.0.2.2:49891        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:47.089  PEER_ADDED   192.0.2.2:48992        -             peer #2 node=? (it connected to us); peers now 2
+2026-10-20 23:04:47.090  SENT         192.0.2.2:48992        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:47.091  RECEIVED     192.0.2.2:50003        FILE_LIST     files=['charlie.txt', 'old_draft.txt']
+2026-10-20 23:04:47.091  RECEIVED     192.0.2.2:48967        PEER_REQUEST  node=c2b57054 tcp_port=50002
+2026-10-20 23:04:47.091  SENT         192.0.2.2:48967        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:48.078  RECEIVED     192.0.2.2:46330        PEER_REQUEST  node=379b5fb5 tcp_port=50004
+2026-10-20 23:04:48.078  SENT         192.0.2.2:46330        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:48.081  PEER_ADDED   192.0.2.2:49002        -             peer #3 node=? (it connected to us); peers now 3
+2026-10-20 23:04:48.082  SENT         192.0.2.2:49002        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:48.083  RECEIVED     192.0.2.2:50004        FILE_LIST     files=['delta.csv']
+2026-10-20 23:04:48.090  RECEIVED     192.0.2.2:49891        PEER_REQUEST  node=a5cb2ea8 tcp_port=50003
+2026-10-20 23:04:48.090  SENT         192.0.2.2:49891        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:48.094  RECEIVED     192.0.2.2:48967        PEER_REQUEST  node=c2b57054 tcp_port=50002
+2026-10-20 23:04:48.094  SENT         192.0.2.2:48967        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:49.081  RECEIVED     192.0.2.2:46330        PEER_REQUEST  node=379b5fb5 tcp_port=50004
+2026-10-20 23:04:49.082  SENT         192.0.2.2:46330        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:49.093  RECEIVED     192.0.2.2:49891        PEER_REQUEST  node=a5cb2ea8 tcp_port=50003
+2026-10-20 23:04:49.094  SENT         192.0.2.2:49891        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:49.107  RECEIVED     192.0.2.2:33752        PEER_REQUEST  node=2774225d tcp_port=50005
+2026-10-20 23:04:49.107  SENT         192.0.2.2:33752        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:49.112  PEER_ADDED   192.0.2.2:49012        -             peer #4 node=? (it connected to us); peers now 4
+2026-10-20 23:04:49.113  SENT         192.0.2.2:49012        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:49.115  RECEIVED     192.0.2.2:50005        FILE_LIST     files=['echo.txt']
+2026-10-20 23:04:50.085  RECEIVED     192.0.2.2:46330        PEER_REQUEST  node=379b5fb5 tcp_port=50004
+2026-10-20 23:04:50.085  SENT         192.0.2.2:46330        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:50.111  RECEIVED     192.0.2.2:33752        PEER_REQUEST  node=2774225d tcp_port=50005
+2026-10-20 23:04:50.111  SENT         192.0.2.2:33752        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:51.114  RECEIVED     192.0.2.2:33752        PEER_REQUEST  node=2774225d tcp_port=50005
+2026-10-20 23:04:51.114  SENT         192.0.2.2:33752        PEER_ACK      ip=192.0.2.2 tcp_port=50001
+2026-10-20 23:04:54.525  RECEIVED     192.0.2.2:50004        DATA_REQUEST  filename=gradient.png
+2026-10-20 23:04:54.525  SENT         192.0.2.2:50004        FILE_DATA     filename=gradient.png status=OK size=463
+2026-10-20 23:04:55.070  SENT         192.0.2.2:50002        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:55.071  SENT         192.0.2.2:50003        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:55.071  SENT         192.0.2.2:50004        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:55.071  SENT         192.0.2.2:50005        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:04:56.131  RECEIVED     192.0.2.2:50002        FILE_LIST     files=['bravo.txt', 'echo.txt']
+2026-10-20 23:04:57.086  RECEIVED     192.0.2.2:50003        FILE_LIST     files=['charlie.txt', 'old_draft.txt']
+2026-10-20 23:04:57.526  SENT         192.0.2.2:50003        DATA_REQUEST  filename=old_draft.txt
+2026-10-20 23:04:57.526  RECEIVED     192.0.2.2:50003        FILE_DATA     filename=old_draft.txt status=ERROR error=file not found
+2026-10-20 23:04:58.119  RECEIVED     192.0.2.2:50004        FILE_LIST     files=['delta.csv', 'gradient.png']
+2026-10-20 23:04:59.107  RECEIVED     192.0.2.2:50005        FILE_LIST     files=['echo.txt']
+2026-10-20 23:05:05.071  SENT         192.0.2.2:50002        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:05:05.072  SENT         192.0.2.2:50003        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:05:05.072  SENT         192.0.2.2:50004        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:05:05.072  SENT         192.0.2.2:50005        FILE_LIST     files=['alpha.txt', 'gradient.png']
+2026-10-20 23:05:06.092  RECEIVED     192.0.2.2:50002        FILE_LIST     files=['bravo.txt', 'echo.txt']
+2026-10-20 23:05:07.087  RECEIVED     192.0.2.2:50003        FILE_LIST     files=['charlie.txt']
+2026-10-20 23:05:08.079  RECEIVED     192.0.2.2:50004        FILE_LIST     files=['delta.csv', 'gradient.png']
+2026-10-20 23:05:09.108  RECEIVED     192.0.2.2:50005        FILE_LIST     files=['echo.txt']
+2026-10-20 23:05:11.027  PEER_REMOVED 192.0.2.2:50005        -             peer #4 node=2774225d dropped 1 files; connection closed by peer (empty read); peers now 3
+2026-10-20 23:05:13.560  INFO         -                      -             node shutting down
+2026-10-20 23:05:13.560  PEER_REMOVED 192.0.2.2:50002        -             peer #1 node=c2b57054 dropped 2 files; local node shutting down; peers now 2
+2026-10-20 23:05:13.560  PEER_REMOVED 192.0.2.2:50003        -             peer #2 node=a5cb2ea8 dropped 1 files; local node shutting down; peers now 1
+2026-10-20 23:05:13.560  PEER_REMOVED 192.0.2.2:50004        -             peer #3 node=379b5fb5 dropped 2 files; local node shutting down; peers now 0

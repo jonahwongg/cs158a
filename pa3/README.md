@@ -1,27 +1,6 @@
 # PA3 – P2P Data Sharing Agent
 
-A peer-to-peer file sharing agent with no central tracker. Every node is both
-a TCP server and a TCP client. Nodes find each other with UDP broadcast on port
-54321, keep one TCP connection per peer, advertise the files in their `shared/`
-directory every 10 seconds, and serve those files on request.
-
-## Files
-
-| File | Purpose |
-|---|---|
-| `agent.py` | Entry point and command-line interface |
-| `node.py` | `P2PNode`: discovery, connections, threads, file lists, transfers |
-| `protocol.py` | Message types, constructors, JSON encoding and TCP length-prefix framing |
-| `peer_table.py` | Thread-safe peer table (peer → connection, identity, advertised files) |
-| `event_log.py` | Thread-safe writer for `log.txt` |
-| `shared/` | Sample files offered by a node started in this directory |
-| `demo/run_local_demo.py` | Starts five nodes on one machine and runs the demo scenario |
-| `demo/nodeN/` | Each demo node's `shared/`, `downloads/`, `log.txt` and `terminal.txt` |
-| `demo/demo_output.txt` | Interleaved terminal output of all five demo nodes |
-
 ## How to run
-
-Requires Python 3.10 or newer and no third-party packages.
 
 ```bash
 cd pa3
@@ -272,17 +251,6 @@ changes have `PEER_ADDED` and `PEER_REMOVED` lines. `INFO` lines record
 startup, shutdown and completed downloads. On the server side, `PEER_ADDED`
 shows the client's temporary port because the peer's listening port and node
 ID are not known until its first FILE_LIST arrives a moment later.
-
-## Division of work
-
-> **TODO:** Fill this in with what each member actually did. It must match
-> the commit history on GitHub.
-
-| Member | Responsibilities |
-|---|---|
-| _Name 1_ | |
-| _Name 2_ | |
-| _Name 3_ | |
 
 ## Execution example
 
